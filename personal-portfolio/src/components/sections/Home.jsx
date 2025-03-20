@@ -35,7 +35,7 @@ export const Home = () => {
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <a
             href="#projects"
-            className="bg-[#7004F4] text-white py-3 px-8 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(112,4,244,0.4)] flex items-center justify-center group"
+            className="bg-purple-500 text-white py-3 px-8 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(112,4,244,0.4)] flex items-center justify-center group"
           >
             View Projects
             <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

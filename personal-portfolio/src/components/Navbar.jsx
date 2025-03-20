@@ -61,7 +61,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             href="#home" 
             className="font-mono text-4xl font-bold text-white hover:scale-105 transition-transform"
           >
-            hemani <span className="text-purple-300">alaparthi</span>
+            hemani <span className="text-purple-400">alaparthi</span>
           </a>
 
           {/* mobile menu button */}
@@ -88,7 +88,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className={`text-3xl font-medium py-4 ${
                   activeSection === link.href.substring(1) 
                     ? "text-white" 
-                    : "text-purple-300"
+                    : "text-purple-400"
                 } hover:text-white transition-colors`}
                 onClick={() => setMenuOpen(false)}
               >
@@ -106,11 +106,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className={`relative font-medium group ${
                   activeSection === link.href.substring(1)
                     ? "text-white" 
-                    : "text-purple-300"
+                    : "text-purple-400"
                 } hover:text-white transition-colors`}
               >
                 {link.text}
-                <span className={`h-0.5 bg-purple-300 absolute bottom-0 left-0 transition-all duration-300 ${
+                <span className={`h-0.5 bg-purple-400 absolute bottom-0 left-0 transition-all duration-300 ${
                   activeSection === link.href.substring(1) ? "w-full" : "w-0 group-hover:w-full"
                 }`}></span>
               </a>
