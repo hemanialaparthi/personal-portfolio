@@ -53,7 +53,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   
   return (
     <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${
-      scrolled ? "bg-purple-900/95 shadow-lg py-2" : "bg-blue-900 py-4"
+      scrolled ? "bg-purple-900/95 shadow-lg py-2" : "bg-black py-4"
     } backdrop-blur-lg border-b border-white/10`}>
       <div className="w-full">
         <div className="flex justify-between items-center px-4 md:px-8 lg:px-12">
