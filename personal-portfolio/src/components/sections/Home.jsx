@@ -27,7 +27,7 @@ export const Home = () => {
         </h1>
 
         <p className="text-gray-300 text-lg mb-10 leading-relaxed">
-        Aspiring software engineer passionate about building innovative solutions. Currently pursuing a double major in Computer Science & Economics at Allegheny College.
+          Aspiring software engineer passionate about building innovative solutions. Currently pursuing a double major in Computer Science & Economics at Allegheny College.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 mb-10">
