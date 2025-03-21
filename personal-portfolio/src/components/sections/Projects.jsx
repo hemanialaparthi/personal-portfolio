@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "../RevealOnScreen";
+
 export const Projects = () => {
   const projects = [
     {
@@ -142,59 +144,60 @@ export const Projects = () => {
           {projects.map((project, index) => {
             const colors = getColorClasses(project.color);
             return (
-              <div
-                key={index}
-                className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group"
-              >
-                <div className="flex items-center mb-8">
-                  <div className={`p-4 ${colors.bgLight} rounded-xl mr-5`}>
-                    {project.icon}
+              <RevealOnScroll key={index}>
+                <div
+                  className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group"
+                >
+                  <div className="flex items-center mb-8">
+                    <div className={`p-4 ${colors.bgLight} rounded-xl mr-5`}>
+                      {project.icon}
+                    </div>
+                    <h3
+                      className={`text-2xl font-bold ${colors.textColor} ${colors.hoverText} transition-colors`}
+                    >
+                      {project.title}
+                    </h3>
                   </div>
-                  <h3
-                    className={`text-2xl font-bold ${colors.textColor} ${colors.hoverText} transition-colors`}
-                  >
-                    {project.title}
-                  </h3>
-                </div>
-                <p className="text-gray-400 mb-8 leading-relaxed text-lg">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-3 mb-8">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className={`${colors.bgLight} ${colors.textColor} py-2 px-4 rounded-full text-sm ${colors.hoverBg} hover:shadow-lg transition-all duration-300 font-medium tracking-wide`}
+                  <p className="text-gray-400 mb-8 leading-relaxed text-lg">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-3 mb-8">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className={`${colors.bgLight} ${colors.textColor} py-2 px-4 rounded-full text-sm ${colors.hoverBg} hover:shadow-lg transition-all duration-300 font-medium tracking-wide`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex justify-start pt-2">
+                    <a
+                      href="#"
+                      className={`${colors.textColor} hover:${colors.hoverText.replace(
+                        "group-hover:",
+                        ""
+                      )} transition-colors flex items-center group text-lg`}
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      <span>View Project</span>
+                      <svg
+                        className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
                 </div>
-                <div className="flex justify-start pt-2">
-                  <a
-                    href="#"
-                    className={`${colors.textColor} hover:${colors.hoverText.replace(
-                      "group-hover:",
-                      ""
-                    )} transition-colors flex items-center group text-lg`}
-                  >
-                    <span>View Project</span>
-                    <svg
-                      className="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M14 5l7 7m0 0l-7 7m7-7H3"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+              </RevealOnScroll>
             );
           })}
         </div>
