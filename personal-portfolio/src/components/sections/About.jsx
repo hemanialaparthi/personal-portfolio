@@ -59,7 +59,7 @@ export const About = () => {
               </div>
             </div>
 
-            {/* Backend section */}
+            {/* backend section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-cyan-500/5 rounded-xl mr-5">
@@ -95,9 +95,9 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Bottom row: education and work experience */}
+          {/* bottom row: education and work experience */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            {/* Education section */}
+            {/* education section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-purple-500/5 rounded-xl mr-5">
@@ -129,14 +129,26 @@ export const About = () => {
                   </h4>
                   <p className="text-purple-300 mb-3">Allegheny College (2023-2027)</p>
                   <p className="text-gray-400 leading-relaxed">
-                    Relevant Coursework: Data Structures, Algorithm Analysis, Web Development,
+                    <b>Relevant Coursework</b>: Data Structures, Algorithm Analysis, Web Development,
                     Software Engineering, Web Applications
+                  </p>
+                  <br />
+                  <p className="text-gray-400 leading-relaxed">
+                    <b>Certifications</b>: Software Development, Programming with Web Technologies, Certification of Design & Creativity
+                  </p>
+                  <br />
+                  <p className="text-gray-400 leading-relaxed">
+                    <b>Honors</b>: Lambda Sigma (Honors Society), Distinguished Alden Scholar (Dean's List), Emerging Leader Scholar
+                  </p>
+                  <br />
+                  <p className="text-gray-400 leading-relaxed">
+                    <b>Activities</b>: Technical Leader, Center for Economics & Business (CBE) Fellow, Resident Advisor, South Asian Student Society (SASS), International Club (IC), Honor Committee
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Work experience section */}
+            {/* work experience section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-blue-500/5 rounded-xl mr-5">
