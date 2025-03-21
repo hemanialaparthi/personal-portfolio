@@ -96,7 +96,7 @@ export const Projects = () => {
     },
   ];
 
-  // Function to get the appropriate color classes based on project color
+  // function to get the appropriate color classes based on project color
   const getColorClasses = (color) => {
     const colorMap = {
       blue: {
@@ -177,7 +177,7 @@ export const Projects = () => {
                   </div>
                   <div className="flex justify-start pt-2">
                     <a
-                      href={project.link} // Use the link property here
+                      href={project.link} // use the link property here
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${colors.textColor} hover:${colors.hoverText.replace(
