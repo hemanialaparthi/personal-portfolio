@@ -27,7 +27,7 @@ export const Projects = () => {
     },
     {
       title: "AI Health Care Bot",
-      description: "With the help of APIs, this project gives a quick diagnosis of the disease based on the symptoms of the user and also provides the nearest hospital information and contact details.",
+      description: "This project gives a quick diagnosis of the diseases, with the use of APIs, based on the symptoms of the user and also provides the nearest hospital information and contact details.",
       technologies: ["Python", "OpenRouter API", "React", "Material UI", "Next.js"],
       icon: (
         <svg
