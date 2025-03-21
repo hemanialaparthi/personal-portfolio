@@ -3,9 +3,9 @@ import { RevealOnScroll } from "../RevealOnScreen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Cloud Platform",
-      description: "Scalable cloud infrastructure management with real-time monitoring and automated scaling.",
-      technologies: ["React", "Node.js", "AWS", "Docker"],
+      title: "Recipe Generator + Calorie Counter",
+      description: "Utilizing APIs, this project offers college students easy recipes and automatic calorie calculations, making meal planning effortless.",
+      technologies: ["Python", "APIs", "React", "Node.js", "Tailwind CSS"],
       icon: (
         <svg
           className="w-6 h-6 text-blue-400"
@@ -23,11 +23,12 @@ export const Projects = () => {
         </svg>
       ),
       color: "blue",
+      link: "https://github.com/hemanialaparthi/RecipeGenerator",
     },
     {
-      title: "AI Analytics Dashboard",
-      description: "ML-powered data visualization platform with predictive analytics and interactive reports.",
-      technologies: ["Python", "TensorFlow", "D3.js", "Flask"],
+      title: "AI Health Care Bot",
+      description: "With the help of APIs, this project gives a quick diagnosis of the disease based on the symptoms of the user and also provides the nearest hospital information and contact details.",
+      technologies: ["Python", "OpenRouter API", "React", "Material UI", "Next.js"],
       icon: (
         <svg
           className="w-6 h-6 text-cyan-400"
@@ -45,36 +46,15 @@ export const Projects = () => {
         </svg>
       ),
       color: "cyan",
+      link: "https://github.com/hemanialaparthi/ai-healthcare-bot",
     },
     {
-      title: "E-Commerce Web App",
-      description: "Full-stack e-commerce with modern UI, secure payment integration, and customizable product inventory.",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      title: "NoDrunkText iMessage App + Extension",
+      description: "iMessage App & Extension that helps users avoid regrettable messages by warning them when texting low-rated contacts. Syncs contact ratings and provides real-time alerts within the app for better decision-making.",
+      technologies: ["Swift", "Xcode", "UserDefaults", "App Groups"],
       icon: (
         <svg
           className="w-6 h-6 text-purple-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-          ></path>
-        </svg>
-      ),
-      color: "purple",
-    },
-    {
-      title: "Real-Time Chat App",
-      description: "Scalable chat platform supporting real-time messaging, presence, and group chat features.",
-      technologies: ["Socket.IO", "Express", "React", "Redis"],
-      icon: (
-        <svg
-          className="w-6 h-6 text-pink-400"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -88,7 +68,31 @@ export const Projects = () => {
           ></path>
         </svg>
       ),
+      color: "purple",
+      link: "https://github.com/Danniyb/cookery",
+    },
+    {
+      title: "Flappy Bird Mod",
+      description: "A fun flappy bird game clone but with an addition of a mod which involves potions (like Minecraft).",
+      technologies: ["Python", "PyGame"],
+      icon: (
+        <svg
+          className="w-6 h-6 text-pink-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+          ></path>
+        </svg>
+      ),
       color: "pink",
+      link: "https://github.com/hemanialaparthi/FlappyBirdMod",
     },
   ];
 
@@ -173,7 +177,9 @@ export const Projects = () => {
                   </div>
                   <div className="flex justify-start pt-2">
                     <a
-                      href="#"
+                      href={project.link} // Use the link property here
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`${colors.textColor} hover:${colors.hoverText.replace(
                         "group-hover:",
                         ""
