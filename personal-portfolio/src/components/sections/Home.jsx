@@ -90,7 +90,7 @@ export const Home = () => {
           {/* profile image with subtle shadow */}
           <div className="relative rounded-full bg-gradient-to-b from-gray-900 to-black p-3 shadow-2xl">
             <img
-              src="/hemani1.png"
+              src="/hemani3.png"
               alt="Hemani Alaparthi"
               className="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover"
             />
