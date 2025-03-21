@@ -4,7 +4,7 @@ export const Home = () => {
       id="home"
       className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-24 md:py-0 md:min-h-screen relative overflow-hidden bg-black"
     >
-      {/* Enhanced animated background elements */}
+      {/* enhanced animated background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full opacity-15 blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-20 w-80 h-80 bg-blue-500 rounded-full opacity-15 blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
@@ -12,7 +12,7 @@ export const Home = () => {
         <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-cyan-500 rounded-full opacity-10 blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
       </div>
 
-      {/* Left Section: Text */}
+      {/* left section: text */}
       <div className="text-left z-10 max-w-2xl md:w-1/2 mb-16 md:mb-0">
         <div className="flex items-center mb-6">
           <div className="h-12 w-1 bg-gradient-to-b from-purple-500 to-pink-500 mr-4"></div>
@@ -52,7 +52,7 @@ export const Home = () => {
           </a>
         </div>
 
-        {/* Social Media Icons */}
+        {/* social media icons */}
         <div className="flex items-center">
           <p className="text-gray-400 text-base mr-4">Connect with me:</p>
           <div className="flex space-x-6">
@@ -80,29 +80,29 @@ export const Home = () => {
         </div>
       </div>
 
-      {/* Right Section: Image with enhanced animated border */}
+      {/* right section: image with enhanced animated border */}
       <div className="w-full md:w-1/2 flex justify-center items-center relative">
         <div className="relative">
-          {/* Multi-layered animated gradient borders */}
+          {/* multi-layered animated gradient borders */}
           <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-spin-slow opacity-70 blur-sm"></div>
           <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-spin-slow-reverse opacity-50 blur-sm" style={{transform: 'scale(1.05)'}}></div>
           
-          {/* Profile image with subtle shadow */}
+          {/* profile image with subtle shadow */}
           <div className="relative rounded-full bg-gradient-to-b from-gray-900 to-black p-3 shadow-2xl">
             <img
-              src="../../../public/hemani1.png"
+              src="/hemani1.png"
               alt="Hemani Alaparthi"
               className="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover"
             />
             
-            {/* Decorative elements */}
+            {/* decorative elements */}
             <div className="absolute -top-6 -right-6 w-12 h-12 bg-blue-500 rounded-full opacity-60 blur-sm animate-pulse"></div>
             <div className="absolute -bottom-4 -left-4 w-10 h-10 bg-purple-500 rounded-full opacity-60 blur-sm animate-pulse" style={{ animationDelay: "0.5s" }}></div>
           </div>
         </div>
       </div>
 
-      {/* Add custom CSS classes for animations */}
+      {/* add custom CSS classes for animations */}
       <style jsx>{`
         @keyframes spin-slow {
           from {
