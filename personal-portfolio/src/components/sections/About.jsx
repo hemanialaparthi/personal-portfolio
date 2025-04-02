@@ -17,13 +17,13 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-32 bg-black relative overflow-hidden"
     >
       <RevealOnScroll>
-        <div className="w-full max-w-6xl mx-auto px-6 md:px-8 relative z-10">
+        <div className="w-full max-w-[90rem] mx-auto px-6 md:px-12 lg:px-16 relative z-10">
           <h2 className="text-5xl font-bold mb-24 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
           {/* Top row: frontend and backend */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-12 md:mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 mb-12 lg:mb-20">
             {/* Frontend section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
@@ -59,7 +59,7 @@ export const About = () => {
               </div>
             </div>
 
-            {/* backend section */}
+            {/* Backend section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-cyan-500/5 rounded-xl mr-5">
@@ -95,9 +95,9 @@ export const About = () => {
             </div>
           </div>
 
-          {/* bottom row: education and work experience */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            {/* education section */}
+          {/* Bottom row: education and work experience */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
+            {/* Education section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-purple-500/5 rounded-xl mr-5">
@@ -148,7 +148,7 @@ export const About = () => {
               </div>
             </div>
 
-            {/* work experience section */}
+            {/* Work experience section */}
             <div className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
               <div className="flex items-center mb-8">
                 <div className="p-4 bg-blue-500/5 rounded-xl mr-5">
