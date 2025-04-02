@@ -3,6 +3,30 @@ import { RevealOnScroll } from "../RevealOnScreen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Piece of Sober",
+      description:
+        "An app & iMessage extension that helps users avoid regrettable messages by warning them when texting low-rated contacts. Syncs contact ratings and provides real-time alerts.",
+      technologies: ["Swift", "Xcode", "UserDefaults", "App Groups"],
+      icon: (
+        <svg
+          className="w-6 h-6 text-purple-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+          ></path>
+        </svg>
+      ),
+      color: "purple",
+      link: "https://github.com/ActsAga/piece_of_sober",
+    },
+    {
       title: "Recipe Generator + Calorie Counter",
       description:
         "Utilizing APIs, this project offers college students easy recipes and automatic calorie calculations, making meal planning effortless.",
@@ -49,30 +73,6 @@ export const Projects = () => {
       ),
       color: "cyan",
       link: "https://github.com/hemanialaparthi/ai-healthcare-bot",
-    },
-    {
-      title: "Piece of Sober",
-      description:
-        "An app & extension that helps users avoid regrettable messages by warning them when texting low-rated contacts. Syncs contact ratings and provides real-time alerts.",
-      technologies: ["Swift", "Xcode", "UserDefaults", "App Groups"],
-      icon: (
-        <svg
-          className="w-6 h-6 text-purple-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-          ></path>
-        </svg>
-      ),
-      color: "purple",
-      link: "https://github.com/ActsAga/piece_of_sober",
     },
     {
       title: "Flappy Bird Mod",
