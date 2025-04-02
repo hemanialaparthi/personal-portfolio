@@ -4,7 +4,8 @@ export const Projects = () => {
   const projects = [
     {
       title: "Recipe Generator + Calorie Counter",
-      description: "Utilizing APIs, this project offers college students easy recipes and automatic calorie calculations, making meal planning effortless.",
+      description:
+        "Utilizing APIs, this project offers college students easy recipes and automatic calorie calculations, making meal planning effortless.",
       technologies: ["Python", "APIs", "React", "Node.js", "Tailwind CSS"],
       icon: (
         <svg
@@ -27,7 +28,8 @@ export const Projects = () => {
     },
     {
       title: "AI Health Care Bot",
-      description: "This project gives a quick diagnosis of the diseases, with the use of APIs, based on the symptoms of the user and also provides the nearest hospital information and contact details.",
+      description:
+        "This project gives a quick diagnosis of diseases using APIs based on user symptoms and provides the nearest hospital information and contact details.",
       technologies: ["Python", "OpenRouter API", "React", "Material UI", "Next.js"],
       icon: (
         <svg
@@ -49,8 +51,9 @@ export const Projects = () => {
       link: "https://github.com/hemanialaparthi/ai-healthcare-bot",
     },
     {
-      title: "NoDrunkText iMessage App + Extension",
-      description: "iMessage App & Extension that helps users avoid regrettable messages by warning them when texting low-rated contacts. Syncs contact ratings and provides real-time alerts within the app for better decision-making.",
+      title: "Piece of Sober",
+      description:
+        "An app & extension that helps users avoid regrettable messages by warning them when texting low-rated contacts. Syncs contact ratings and provides real-time alerts.",
       technologies: ["Swift", "Xcode", "UserDefaults", "App Groups"],
       icon: (
         <svg
@@ -69,11 +72,12 @@ export const Projects = () => {
         </svg>
       ),
       color: "purple",
-      link: "https://github.com/Danniyb/cookery",
+      link: "https://github.com/ActsAga/piece_of_sober",
     },
     {
       title: "Flappy Bird Mod",
-      description: "A fun flappy bird game clone but with an addition of a mod which involves potions (like Minecraft).",
+      description:
+        "A fun Flappy Bird game clone with a mod that includes potions (like Minecraft).",
       technologies: ["Python", "PyGame"],
       icon: (
         <svg
@@ -96,7 +100,6 @@ export const Projects = () => {
     },
   ];
 
-  // function to get the appropriate color classes based on project color
   const getColorClasses = (color) => {
     const colorMap = {
       blue: {
@@ -104,7 +107,6 @@ export const Projects = () => {
         textColor: "text-blue-400",
         hoverBg: "hover:bg-blue-500/20",
         hoverShadow: "hover:shadow-blue-500/10",
-        borderHover: "hover:border-blue-500/50",
         hoverText: "group-hover:text-blue-300",
       },
       cyan: {
@@ -112,7 +114,6 @@ export const Projects = () => {
         textColor: "text-cyan-400",
         hoverBg: "hover:bg-cyan-500/20",
         hoverShadow: "hover:shadow-cyan-500/10",
-        borderHover: "hover:border-cyan-500/50",
         hoverText: "group-hover:text-cyan-300",
       },
       purple: {
@@ -120,7 +121,6 @@ export const Projects = () => {
         textColor: "text-purple-400",
         hoverBg: "hover:bg-purple-500/20",
         hoverShadow: "hover:shadow-purple-500/10",
-        borderHover: "hover:border-purple-500/50",
         hoverText: "group-hover:text-purple-300",
       },
       pink: {
@@ -128,7 +128,6 @@ export const Projects = () => {
         textColor: "text-pink-400",
         hoverBg: "hover:bg-pink-500/20",
         hoverShadow: "hover:shadow-pink-500/10",
-        borderHover: "hover:border-pink-500/50",
         hoverText: "group-hover:text-pink-300",
       },
     };
@@ -140,17 +139,17 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-32 bg-black relative overflow-hidden"
     >
-      <div className="w-full max-w-6xl mx-auto px-6 md:px-8 relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10">
         <h2 className="text-5xl font-bold mb-24 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 bg-clip-text text-transparent text-center">
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {projects.map((project, index) => {
             const colors = getColorClasses(project.color);
             return (
               <RevealOnScroll key={index}>
                 <div
-                  className="rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group"
+                  className={`rounded-2xl p-10 border border-white/5 backdrop-blur-sm bg-gray-800/50 hover:-translate-y-2 hover:shadow-xl ${colors.hoverShadow} transition-all duration-300 group`}
                 >
                   <div className="flex items-center mb-8">
                     <div className={`p-4 ${colors.bgLight} rounded-xl mr-5`}>
@@ -177,7 +176,7 @@ export const Projects = () => {
                   </div>
                   <div className="flex justify-start pt-2">
                     <a
-                      href={project.link} // use the link property here
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${colors.textColor} hover:${colors.hoverText.replace(
