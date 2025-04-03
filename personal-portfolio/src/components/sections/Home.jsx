@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import hemaniImage from '/hemani3.png';
 
 export const Home = () => {
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
@@ -126,7 +127,7 @@ export const Home = () => {
           {/* profile image with enhanced effects */}
           <div className="relative rounded-full bg-gradient-to-b from-gray-900 to-black p-3 shadow-2xl group">
             <img
-              src="../../../public/hemani3.png"
+              src={hemaniImage} 
               alt="Hemani Alaparthi"
               className="w-64 h-64 md:w-[500px] md:h-[500px] rounded-full object-cover transition-all duration-500 group-hover:scale-105"
             />
