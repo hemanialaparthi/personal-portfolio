@@ -54,11 +54,11 @@ jobs:
       
       - name: Install Dependencies
         run: npm install
-        working-directory: ./personal-portfolio  # Add this line
+        working-directory: ./personal-portfolio
       
       - name: Build with Vite
         run: npm run build
-        working-directory: ./personal-portfolio  # Add this line
+        working-directory: ./personal-portfolio
         
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -66,7 +66,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './personal-portfolio/dist'  # Update this path
+          path: './personal-portfolio/dist'
       
       - name: Deploy to GitHub Pages
         id: deployment
