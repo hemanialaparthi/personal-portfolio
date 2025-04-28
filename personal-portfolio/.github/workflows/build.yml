@@ -1,4 +1,4 @@
-name: CI Checks
+name: Build and Deploy
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
@@ -34,55 +34,36 @@ jobs:
       - name: Install Dependencies
         run: npm install
       
-      - name: Run HTML Lint
-        run: npx htmlhint "*.html" "index.html"
-      
-      - name: Run CSS Lint
-        run: npm run lint:css
+      - name: Run ESLint
+        run: npm run lint
   
-  test:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    needs: [lint]
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
       
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
       
       - name: Install Dependencies
         run: npm install
-
-      - name: Run JavaScript Tests
-        run: npm test
-
-  build:
-    runs-on: ubuntu-latest
-    needs: [lint, test]
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
       
-      - name: Setup Pages
+      - name: Build with Vite
+        run: npm run build
+        
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
-      
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+        with:
+          path: './dist'
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/main'
