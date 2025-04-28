@@ -54,7 +54,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   // Using consistent color theme
   const bgColor = "bg-black";
   const accentColor = "text-purple-400";
-  const hoverAccentColor = "text-purple-300";
   const buttonBgColor = "bg-purple-500";
   const buttonHoverBgColor = "bg-purple-400";
   
