@@ -8,13 +8,11 @@ on:
     branches:
       - main
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -33,9 +31,11 @@ jobs:
       
       - name: Install Dependencies
         run: npm install
+        working-directory: ./personal-portfolio  # Add this line
       
       - name: Run ESLint
         run: npm run lint
+        working-directory: ./personal-portfolio  # Add this line
   
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -51,9 +51,11 @@ jobs:
       
       - name: Install Dependencies
         run: npm install
+        working-directory: ./personal-portfolio  # Add this line
       
       - name: Build with Vite
         run: npm run build
+        working-directory: ./personal-portfolio  # Add this line
         
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
@@ -61,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './personal-portfolio/dist'  # Update this path
       
       - name: Deploy to GitHub Pages
         id: deployment
