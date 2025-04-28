@@ -31,11 +31,11 @@ jobs:
       
       - name: Install Dependencies
         run: npm install
-        working-directory: ./personal-portfolio  # Add this line
+        working-directory: ./personal-portfolio
       
       - name: Run ESLint
         run: npm run lint
-        working-directory: ./personal-portfolio  # Add this line
+        working-directory: ./personal-portfolio
   
   build-and-deploy:
     runs-on: ubuntu-latest
