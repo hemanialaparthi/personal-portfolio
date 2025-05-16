@@ -103,7 +103,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             ))}
             
             <a 
-              href="/Alaparthi_Hemani_Resume.pdf"
+              href="/personal-portfolio/Alaparthi_Hemani_Resume.pdf"
               className={`mt-6 px-4 py-2 ${buttonBgColor} hover:${buttonHoverBgColor} text-white rounded-md font-medium transition-colors`}
               target="_blank"
               rel="noopener noreferrer"
@@ -132,7 +132,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             ))}
             
             <a 
-              href="/302-webportfolio/Alaparthi_Hemani_Resume.pdf"
+              href="/personal-portfolio/Alaparthi_Hemani_Resume.pdf"
               className={`px-3 py-1.5 lg:px-4 lg:py-2 ${buttonBgColor} hover:${buttonHoverBgColor} text-white rounded-md font-medium transition-colors`}
               target="_blank"
               rel="noopener noreferrer"
